@@ -71,14 +71,14 @@ function addCounter() {
         <button class="start-btn" onclick="start('timer${counter}')">
             Start
         </button>
-        <button class="setting-btn" onclick="setting('timer${counter}')">
+        <button class="setting-btn" onclick="openSetting('timer${counter}')">
             Setting
         </button>
     </div>
     `);
 }
 
-function setting(timer){
+function openSetting(timer){
     current = timer;
     stop(timer);
     $('.dimmer').css('display', 'inherit');
