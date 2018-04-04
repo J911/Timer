@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+body{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.wrapper{
+    display: inline-block;
+    background-color: rgb(231, 228, 228);
+    width: 200px;
+    height: 220px;
+    border-radius: 3px;
+    border: 2px solid rgb(201, 201, 201);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.timer-title{
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    text-align: center; 
+    font-size: 1.5rem;  
+    color: rgb(71, 71, 71);
+}
+input:focus,
+button:focus{
+    outline: none;
+}
+ul.time{
+    list-style: none;
+    text-align: center;
+    
+    padding: 0;
+    font-size: 25px;
+}
+ul.time li {
+    text-align: center;
+    display: inline-block;
+    width: 24px;
+}
+li.hour, li.min{
+    font-weight: 600;
+}
+.start-btn, .done-btn{
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff6f7;
+    background-color: rgb(255, 121, 121);
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.start-btn:active, .done-btn:active{
+    background-color: rgb(253, 101, 101);
+}
+.stop-btn{
+    margin-bottom: 10px;
+}
+.setting-btn{
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff6f7;
+    background-color: rgb(92, 89, 114);
+    cursor: pointer;
+    border-radius: 3px;
+}
+.setting-btn:active, .cancle-btn:active{
+    background-color: rgb(68, 66, 82);
+}
+.stop-btn, .cancle-btn{
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff6f7;
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+    border-radius: 3px;
+}
+.float-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: rgb(253, 101, 101);
+    color: #fff;
+    border: 0;
+    cursor: pointer;   
+    box-shadow: 0 0 10px rgb(87, 87, 87);    
+}
+.inputTime{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0 10px; 
+    border: 1px dashed rgb(87, 87, 87);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.setting{
+    display: none;
+
+    position: fixed;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: -200px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgb(66, 66, 66);
+    width: 350px;
+    height: 230px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+
+}
+.setting h1{
+    font-size: 1.3rem;
+    
+}
+.dimmer {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.747);
+}
