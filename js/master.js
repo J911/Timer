@@ -74,6 +74,9 @@ function addCounter() {
         <button class="setting-btn" onclick="setting('timer${counter}')">
             Setting
         </button>
+        <button class="setting-btn" onclick="remove('timer${counter}')">
+            Remove
+        </button>
     </div>
     `);
 }
@@ -106,4 +109,10 @@ function set(){
     $(`#${current} li.min`).empty().append(timers[current].min);
     $(`#${current} li.sec`).empty().append(timers[current].sec);
     cancle();
+}
+
+function remove(timer) {
+    stop(timer);
+    timers[timer] = null;
+    $('#'+timer).remove();
 }
